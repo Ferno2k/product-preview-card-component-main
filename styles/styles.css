@@ -79,15 +79,11 @@
     color: var(--clr-neutral-400);
     background-color: var(--clr-secondory-200);
 
-    /* for this project only */
     
-    /* am using flex */
-    display: flex;
-    flex-direction: column;
-    margin: 2.5rem;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
+
+    display: grid;
+    place-content: center;
+    margin: 1rem;
   }
 
   /* utilities */
@@ -110,6 +106,7 @@
   }
 
   /* button */
+
   .button {
     cursor: pointer;
     text-decoration: none;
@@ -120,7 +117,7 @@
 
     border: 0;
     border-radius: 0.5rem;
-    padding: .5em 1.5em;
+    padding: 0.75em 1.5em;
     background-color: var(--clr-primary-400);
     color: var(--clr-neutral-100);
     font-weight: var(--fw-bold);
@@ -165,9 +162,7 @@
   }
 
   .product_content {
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
     gap: var(--content-spacing);
     padding: var(--content-padding);
   }
@@ -192,6 +187,7 @@
 
   footer{
     text-align: center;
+    margin-top: 20px;
   }
 
   a {
