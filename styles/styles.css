@@ -163,6 +163,10 @@
     body{
       flex-direction: column;
     };
+
+    picture{
+
+    }
   }
 
   .product_content {
