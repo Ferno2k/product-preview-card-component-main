@@ -85,15 +85,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    align-items: center;
     align-content: center;
+
     justify-content: center;
+    flex-direction: row;
     
-  
-    
-    /* guide is with grid */
-    /* display: grid;
-    place-content: center;
-    margin: 1rem; */
   }
 
   /* utilities */
@@ -165,9 +162,11 @@
   @media (min-width: 600px){
     .product {
     --content-padding: 2rem;
-      /* flex-direction: row; */
       grid-template-columns: 1fr 1fr;
     }
+    body{
+      flex-direction: column;
+    };
   }
 
   .product_content {
@@ -198,5 +197,3 @@
     font-family: var(--ff-accent);
     color: var(--clr-primary-400);
   }
-
-  
