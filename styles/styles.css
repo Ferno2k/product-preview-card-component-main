@@ -84,8 +84,8 @@
     /* am using flex */
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    justify-content: center;
+    margin: 2.5rem;
+    justify-content: space-around;
     align-items: center;
     gap: 1rem;
   }
@@ -139,13 +139,16 @@
     background-color: var(--clr-primary-500);
   }
 
+  
   /* product styles */
   .product{
     --content-padding: 1.5rem;
     --content-spacing: 1rem;
 
 
-    display: grid;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
 
     background-color: var(--clr-neutral-100);
     border-radius: 0.5rem;
@@ -156,21 +159,21 @@
   
 
   @media (min-width: 600px){
-    .product {
-    --content-padding: 2rem;
-      grid-template-columns: 1fr 1fr;
+  
+    .product{
+      flex-direction: row;
+      align-item: center;
+      --content-padding: 2rem;
     }
-    body{
-      flex-direction: column;
-    };
+
+    picture {
+      flex-basis: 1000px; 
+    }
   }
 
   .product_content {
-    /* display: flex;
-
-    flex-direction: column; */
-
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     gap: var(--content-spacing);
     padding: var(--content-padding);
