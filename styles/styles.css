@@ -189,6 +189,10 @@
     color: var(--clr-primary-400);
   }
 
+  footer{
+    text-align: center;
+  }
+  
   a {
     color: var(--clr-primary-400);
     font-weight: var(--fw-bold);
